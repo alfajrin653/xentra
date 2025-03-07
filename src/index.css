@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import 'tailwindcss';
+
+body {
+  width: fullscreen;
+  height: fullscreen;
+}
+
+@layer base {
+  :root {
+    --color-primary: #012e31;
+    --color-secondary: #f0f0f0;
+    --font-inter: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
