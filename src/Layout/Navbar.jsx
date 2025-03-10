@@ -55,17 +55,17 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href='#' className='block px-4 py-2 hover:bg-gray-100'>
+                      <a href='/BusinessImplementationBasic' className='block px-4 py-2 hover:bg-gray-100'>
                         Business Implementation Basic
                       </a>
                     </li>
                     <li>
-                      <a href='#' className='block px-4 py-2 hover:bg-gray-100'>
+                      <a href='/KonsultasiOdoo' className='block px-4 py-2 hover:bg-gray-100'>
                         Konsultasi Odoo
                       </a>
                     </li>
                     <li>
-                      <a href='#' className='block px-4 py-2 hover:bg-gray-100'>
+                      <a href='/SupportOdoo' className='block px-4 py-2 hover:bg-gray-100'>
                         Support Odoo
                       </a>
                     </li>
