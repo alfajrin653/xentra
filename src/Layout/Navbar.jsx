@@ -1,11 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <nav className='fixed  top-0 left-0 z-50 w-full bg-white border-gray-200'>
+    <nav className='fixed top-0 left-0 z-50 w-full bg-white border-gray-200'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
         {/* Logo */}
         <a href='/' className='flex items-center space-x-3'>
@@ -35,7 +49,7 @@ const Navbar = () => {
             </li>
 
             {/* Dropdown Odoo */}
-            <li className='relative'>
+            <li className='relative' ref={dropdownRef}>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className='flex items-center justify-between w-full py-2 px-3 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto'
@@ -57,6 +71,11 @@ const Navbar = () => {
                     <li>
                       <a href='/BusinessImplementationBasic' className='block px-4 py-2 hover:bg-gray-100'>
                         Business Implementation Basic
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/BusinessImplementationAdvance' className='block px-4 py-2 hover:bg-gray-100'>
+                        Business Implementation Advance
                       </a>
                     </li>
                     <li>

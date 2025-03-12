@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = ({ onClick, className = 'h-[41px] w-[166px] rounded-[10px]', children }) => {
+const Button = ({ onClick, className = 'h-[41px] w-[166px] rounded-[10px] border-primary font-semibold', children }) => {
   return (
-    <button onClick={onClick} className={` border-2 border-primary font-inter font-semibold text-primary bg-white  flex items-center justify-center  ${className}`}>
+    <button onClick={onClick} className={` border-2 font-inter  text-primary bg-white  flex items-center justify-center  ${className}`}>
       {children}
     </button>
   );

@@ -8,10 +8,13 @@ const WhatsappButton = () => {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
+    <div className='relative'>
     <a href={whatsappLink} target='_blank' rel='noopener noreferrer' className='fixed bottom-5 right-5 text-white p-3 rounded-full shadow-lg hover:bg-green-50 transition-all flex items-center justify-center w-14 h-14'>
       {/* <FaWhatsapp size={28} /> */}
       <img src={wa} alt='aa' />
     </a>
+
+    </div>
   );
 };
 
