@@ -1,5 +1,5 @@
 import Navbar from '../Layout/Navbar';
-import WhatsappButton from '../componet/WhatsappButton';
+import WhatsappButton from '../components/WhatsappButton';
 import HeroSection from '../Layout/HeroSection';
 import About from './About';
 import herosection from '../assets/herosection.png';

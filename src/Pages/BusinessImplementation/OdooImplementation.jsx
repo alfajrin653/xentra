@@ -1,4 +1,4 @@
-import Kfmeeting from '../Assets/Kfmeeting.png'
+import Kfmeeting from '../../Assets/Kfmeeting.png'
 
 const OdooImplementation = () => {
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from '../componet/Sidebar';
-import ContentBasic from '../componet/ContentBasic';
+import Sidebar from '../../components/Sidebar';
+import ContentBasic from '../../components/ContentBasic';
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('Finance');

@@ -1,12 +1,12 @@
-import HeroSection from "../Layout/HeroSection"
-import Navbar from "../Layout/Navbar"
-import ButtonWhatsapp from "../componet/WhatsappButton"
-import BIAdvance from "../assets/BIAdvance.png"
-import BI from '../assets/Advance/BI.png'
-import DO from '../assets/Advance/DO.png'
-import IOT from '../assets/Advance/IOT.png'
-import IS from '../assets/Advance/IS.png'
-import odoodraft from '../assets/Advance/odoodraft.png'
+import HeroSection from "../../Layout/HeroSection"
+import Navbar from "../../Layout/Navbar"
+import ButtonWhatsapp from "../../components/WhatsappButton"
+import BIAdvance from "../../assets/BIAdvance.png"
+import BI from '../../assets/Advance/BI.png'
+import DO from '../../assets/Advance/DO.png'
+import IOT from '../../assets/Advance/IOT.png'
+import IS from '../../assets/Advance/IS.png'
+import odoodraft from '../../assets/Advance/odoodraft.png'
 
 
 

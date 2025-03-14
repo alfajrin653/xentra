@@ -1,7 +1,7 @@
 // Import Komponen
-import Card from '../componet/Card';
+import Card from '../components/Card';
 import Navbar from '../Layout/Navbar';
-import WhatsappButton from '../componet/WhatsappButton';
+import WhatsappButton from '../components/WhatsappButton';
 import unduh from '../assets/unduh.png';
 import expert from '../assets/WhyXentra/expert.png';
 import higtQuality from '../assets/WhyXentra/higtQuality.png';

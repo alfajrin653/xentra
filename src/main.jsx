@@ -4,12 +4,16 @@ import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-
 import './index.css';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
-import WhatOdoo from './Pages/WhatThatOdoo.jsx';
-import BIBasic from './Pages/BIBasic.jsx';
-import BIAdvance from './Pages/BIAdvance.jsx';
-import Konsultasi from './Pages/Konsultasi.jsx';
-import SupportOdoo from './Pages/SupportOdoo.jsx';
-import Training from './Pages/Training.jsx';
+import WhatOdoo from './Pages/Odoo/WhatThatOdoo.jsx';
+import BIBasic from './Pages/BusinessImplementation/BIBasic.jsx';
+import BIAdvance from './Pages/BusinessImplementation/BIAdvance.jsx';
+import Konsultasi from './Pages/Odoo/Konsultasi.jsx';
+import SupportOdoo from './Pages/Odoo/SupportOdoo.jsx';
+import FunctionalTraining from './Pages/Training/FunctionalTraining.jsx';
+import TrainingSection from './Pages/Training/TrainingSection.jsx';
+import MasterclassTraining from './Pages/Training/MasterclassTraining.jsx';
+import DeveloperTraining from './Pages/Training/DeveloperTraining.jsx';
+import Workshop from './Pages/Training/Workshop.jsx';
 
 // ✅ Komponen untuk mengupdate title
 const TitleUpdater = () => {
@@ -55,11 +59,17 @@ const router = createBrowserRouter([
       { path: "/BusinessImplementationAdvance", element: <BIAdvance /> },
       { path: "/KonsultasiOdoo", element: <Konsultasi /> },
       { path: "/supportOdoo", element: <SupportOdoo /> },
-      { path: "/Training", element: <Training /> },
+      
+            // Training Section tanpa children
+      { path: "/TrainingSection", element: <TrainingSection /> },
+      { path: "/FunctionalTraining", element: <FunctionalTraining /> },
+      { path: "/DeveloperTraining", element: <DeveloperTraining /> },
+      { path:  "/MasterclassTraining", element: <MasterclassTraining /> },
+      { path: "/Workshop", element: <Workshop /> },
     ],
   },
-]);
-
+],
+);
 // ✅ Render aplikasi
 createRoot(document.getElementById('root')).render(
   <StrictMode>

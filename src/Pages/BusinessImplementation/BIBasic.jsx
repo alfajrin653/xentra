@@ -1,9 +1,9 @@
 import React from 'react';
-import ImgBIBasic from '../assets/ImgBIBasic.png';
-import HeroSection from '../Layout/HeroSection';  
-import Navbar from '../Layout/Navbar';
+import ImgBIBasic from '../../assets/ImgBIBasic.png';
+import HeroSection from '../../Layout/HeroSection';  
+import Navbar from '../../Layout/Navbar';
 import Dashboard from './Dashboard';
-import ButtonWhatsapp from '../componet/WhatsappButton';
+import ButtonWhatsapp from '../../components/WhatsappButton';
 import CycleProduct from './CycleProduct';
 import OdooImplementation from './OdooImplementation';  
 

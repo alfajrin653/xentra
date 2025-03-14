@@ -1,10 +1,10 @@
-import Navbar from '../Layout/Navbar';
-import odoo from '../assets/odoo.png';
-import segitiga from '../assets/segitiga.png';
-import Card from '../componet/Card';
-import expert from '../assets/WhyXentra/expert.png';
-import higtQuality from '../assets/WhyXentra/higtQuality.png';
-import service from '../assets/WhyXentra/service.png';
+import Navbar from '../../Layout/Navbar';
+import odoo from '../../assets/odoo.png';
+import segitiga from '../../assets/segitiga.png';
+import Card from '../../components/Card';
+import expert from '../../assets/WhyXentra/expert.png';
+import higtQuality from '../../assets/WhyXentra/higtQuality.png';
+import service from '../../assets/WhyXentra/service.png';
 
 const WhatOdoo = () => {
   return (

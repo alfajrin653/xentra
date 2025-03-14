@@ -1,8 +1,8 @@
 import React from "react";
 import { FiMonitor, FiPackage, FiClock, FiCheckCircle } from "react-icons/fi";
-import Button from "../componet/Button";
-import Navbar from "../Layout/Navbar";
-import WhatsappButton from "../componet/WhatsappButton";
+import Button from "../../components/Button";
+import Navbar from "../../Layout/Navbar";
+import WhatsappButton from "../../components/WhatsappButton";
 
 const SupportOdoo = () => {
  return (

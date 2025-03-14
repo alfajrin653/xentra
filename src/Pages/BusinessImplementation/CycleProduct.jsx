@@ -1,7 +1,7 @@
-import packages from '../assets/CycleProduct/package.png'
-import Process from '../assets/CycleProduct/Process.png'
-import Based from '../assets/CycleProduct/Based.png'
-import Button from '../componet/Button'
+import packages from '../../assets/CycleProduct/package.png'
+import Process from '../../assets/CycleProduct/Process.png'
+import Based from '../../assets/CycleProduct/Based.png'
+import Button from '../../components/Button'
 
 
 const CycleProduct = () => {
