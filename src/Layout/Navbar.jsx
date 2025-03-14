@@ -99,7 +99,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href='#' className='block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0'>
+              <a href='/Training' className='block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0'>
                 Training
               </a>
             </li>

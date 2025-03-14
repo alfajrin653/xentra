@@ -7,6 +7,9 @@ import About from './Pages/About.jsx';
 import WhatOdoo from './Pages/WhatThatOdoo.jsx';
 import BIBasic from './Pages/BIBasic.jsx';
 import BIAdvance from './Pages/BIAdvance.jsx';
+import Konsultasi from './Pages/Konsultasi.jsx';
+import SupportOdoo from './Pages/SupportOdoo.jsx';
+import Training from './Pages/Training.jsx';
 
 // ✅ Komponen untuk mengupdate title
 const TitleUpdater = () => {
@@ -15,12 +18,13 @@ const TitleUpdater = () => {
   useEffect(() => {
     const titles = {
       "/": "Home - Xentra",
-      "/about": "About Us - Xentra",
+      "/About": "About Us - Xentra",
       "/WhatThatOdoo": "What is Odoo? - Xentra",
       "/BusinessImplementationBasic": "Business Implementation Basic - Xentra",
       "/BusinessImplementationAdvance": "Business Implementation Advance - Xentra",
       "/KonsultasiOdoo": "Konsultasi Odoo - Xentra",
       "/SupportOdoo": "Support Odoo - Xentra",
+      "/Training": "Training  - Xentra",
     };
     document.title = titles[location.pathname] || "Xentra";
   }, [location]);
@@ -49,8 +53,9 @@ const router = createBrowserRouter([
       { path: "/WhatThatOdoo", element: <WhatOdoo /> },
       { path: "/BusinessImplementationBasic", element: <BIBasic /> },
       { path: "/BusinessImplementationAdvance", element: <BIAdvance /> },
-      { path: "/KonsultasiOdoo", element: <h1 className="text-2xl font-semibold text-center">Konsultasi Odoo</h1> },
-      { path: "/SupportOdoo", element: <h1 className="text-2xl font-semibold text-center">Support Odoo</h1> },
+      { path: "/KonsultasiOdoo", element: <Konsultasi /> },
+      { path: "/supportOdoo", element: <SupportOdoo /> },
+      { path: "/Training", element: <Training /> },
     ],
   },
 ]);
