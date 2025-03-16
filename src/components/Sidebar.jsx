@@ -12,8 +12,8 @@ const Sidebar = ({ setActiveSection }) => {
     "Marketing",
     "Website",
     "Productivity",
-    "Supply Chain",
-    "Human Resource",
+    "Supply_Chain",
+    "Human_Resource",
   ];
 
   // Fungsi untuk menutup sidebar saat klik di luar
@@ -56,7 +56,7 @@ const Sidebar = ({ setActiveSection }) => {
             }}
             className="block w-full lg:w-[229px] h-[56px] text-left font-bold p-2 my-1 rounded-[10px] hover:bg-gray-700 transition"
           >
-            {section}
+            {section.replace("_", " ")} {/* Mengganti _ dengan spasi untuk tampilan */}
           </button>
         ))}
       </div>

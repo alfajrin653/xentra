@@ -10,7 +10,7 @@ const ContentBasic = ({ activeSection }) => {
       <p className="text-gray-600 max-w-3xl text-sm md:text-base">{data.description}</p>
 
       <div className="mt-6 flex flex-col md:flex-row gap-4">
-        <img src={data.image} alt={activeSection} className="rounded-lg w-full md:w-[350px] max-h-[400px]" />
+        <img src={data.image} alt={activeSection} className="rounded-lg w-full md:w-[350px] max-h-[450px]" />
         <img src={data.img} alt={activeSection} className="rounded-lg w-full md:w-[600px] max-h-[400px]" />
       </div>
     </div>
