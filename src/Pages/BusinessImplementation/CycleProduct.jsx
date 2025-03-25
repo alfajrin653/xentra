@@ -27,7 +27,7 @@ const CycleProduct = () => {
 ]
     return (
         <div className="flex scale-75 md:scale-100 flex-col justify-center items-center">
-            <h1 className="text-2xl font-inter font-bold text-center py-[50px]">CycleProduct</h1>
+            <h1 className="text-2xl font-inter font-extrabold text-center py-[50px]">CYCLE PRODUCT</h1>
             <div className="flex flex-col justify-center xl:flex-row gap-[15px] pb-[61px]">
                 {product.map((product,index) => (                
                 <div key={index} className="flex flex-col justify-evenly items-center border-2 border-primary bg-primary text-white w-[400px] h-[500px] rounded-3xl  ">
@@ -39,7 +39,7 @@ const CycleProduct = () => {
             </div>
             <div className='pt-[20px] pb-[100px]'>
                 <a href="/Contact">
-            <Button className='border-amber-500 w-[316px] h-[56px] rounded-[24px] font-bold text-3xl'> Contack </Button></a>
+            <Button className='border-amber-500 w-[316px] h-[56px] rounded-[24px] font-bold text-3xl'> Contact </Button></a>
             </div>
             </div>
 

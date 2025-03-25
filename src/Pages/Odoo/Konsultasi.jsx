@@ -68,7 +68,7 @@ const ContentKonsultan = () => {
       >
         <p className="text-center font-semibold font-inter">{DataAdvance.decription}</p>
       </div>
-      <Button> Consultasi Geratis </Button>
+      <Button> konsultasi gratis </Button>
     </div>
   ))}
 </div>

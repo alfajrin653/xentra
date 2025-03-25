@@ -2,17 +2,26 @@ import Navbar from '../Layout/Navbar';
 import WhatsappButton from '../components/WhatsappButton';
 import HeroSection from '../Layout/HeroSection';
 import About from './About';
-import herosection from '../assets/herosection.png';
+import herosection1 from '../assets/herosection1.png';
+
+
+
+const Content = {
+   title1 : 'Simplifying ERP with Odoo',
+   title2 : 'for Sustainable Growth',
+   backgroundImage : herosection1,
+}
+
 
 const Home = () => {
-  const title1 = 'Simplifying ERP with Odoo';
-  const title2 = 'for Sustainable Growth';
+
+
   return (
     <>
       <Navbar />
-      <HeroSection backgroundImage={herosection} title1={title1} title2={title2} />
+      <HeroSection {...Content}/>
       <WhatsappButton />
-      <About />
+      <About padding='py-0' />
     </>
   );
 };

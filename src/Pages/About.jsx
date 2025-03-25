@@ -2,17 +2,17 @@
 import Card from '../components/Card';
 import Navbar from '../Layout/Navbar';
 import WhatsappButton from '../components/WhatsappButton';
-import unduh from '../assets/unduh.png';
 import expert from '../assets/WhyXentra/expert.png';
 import higtQuality from '../assets/WhyXentra/higtQuality.png';
 import odooReady from '../assets/WhyXentra/odooReady.png';
 import service from '../assets/WhyXentra/service.png';
 import supportOdoo from '../assets/WhyXentra/supportOdoo.png';
 import Home from './Home';
+import DownloadCompro from '../components/DownloadCrompro';
 
 // Komponen Hero Section
 const HeroSection = () => (
-  <div className='flex justify-center items-center bg-primary w-screen h-[121px] mt-3'>
+  <div className='flex justify-center items-center bg-primary w-screen h-[121px] mt-[1px]'>
     <h1 className='text-inter font-bold text-center text-6xl text-white'>ABOUT US</h1>
   </div>
 );
@@ -21,8 +21,7 @@ const HeroSection = () => (
 const AboutDescription = () => (
   <div className='flex justify-center items-center py-10'>
     <p className='text-center text-base w-[1000px] font-inter'>
-    Majoo adalah anak perusahaan PT Adinata Mitra Solusi, yang menyediakan solusi teknologi andal bagi bisnis di Indonesia. Kami berfokus pada sistem Enterprise Resource Planning (ERP) berbasis Odoo untuk membantu bisnis mengelola operasional secara efisien dan terintegrasi. Sebagai mitra resmi Odoo, kami menawarkan solusi ERP yang efektif, mudah digunakan, dan dapat disesuaikan dengan kebutuhan bisnis, mencakup keuangan, penjualan, pergudangan, hingga manajemen pelanggan. Dengan teknologi inovatif dan dukungan profesional, Majoo berkomitmen mendorong pertumbuhan dan kesuksesan bisnis di berbagai industri.
-    </p>
+    Xentra adalah anak perusahaan PT Adinata Mitra Solusi, yang menyediakan solusi teknologi andal bagi bisnis di Indonesia. Kami berfokus pada sistem Enterprise Resource Planning (ERP) berbasis Odoo untuk membantu bisnis mengelola operasional secara efisien dan terintegrasi. Sebagai mitra resmi Odoo, kami menawarkan solusi ERP yang efektif, mudah digunakan, dan dapat disesuaikan dengan kebutuhan bisnis, mencakup keuangan, penjualan, pergudangan, hingga manajemen pelanggan. Dengan teknologi inovatif dan dukungan profesional, Xentra berkomitmen mendorong pertumbuhan dan kesuksesan bisnis di berbagai industri.    </p>
   </div>
 );
 
@@ -42,7 +41,7 @@ const MissionVision = () => (
     <div className='bg-primary text-white p-6 text-end'>
       <h3 className='text-xl font-semibold'>OUR VISION</h3>
       <ul className='list-decimal list-inside mt-3'>
-        <ol>Majoo is Official and Certified Odoo Partner</ol>
+        <ol>Xentra is Official and Certified Odoo Partner</ol>
         <ol>All in One Support Odoo</ol>
         <ol>High quality deliverables</ol>
         <ol>Expert in all versions of Odoo</ol>
@@ -53,14 +52,7 @@ const MissionVision = () => (
 );
 
 // Komponen Tombol Download
-const DownloadButton = () => (
-  <a href='https://drive.google.com/uc?export=download&id=1zeodo9W0uHLk2FDmiGoNEAmM6lmxlat4'>
-    <button className='fixed w-[141px] h-[39px] border-2 rounded-lg bottom-5 right-5 bg-primary text-white mr-15 p-3 shadow-lg hover:bg-green-600 transition-all flex items-center justify-center'>
-      <img src={unduh} alt='unduh' className='ml-0' />
-      <span className='text-[10px] font-inter'>Company profile</span>
-    </button>
-  </a>
-);
+
 
 // componrent card
 // Data untuk About Page
@@ -73,11 +65,11 @@ const aboutFeatures = [
 ];
 
 // Komponen Utama About
-const About = () => {
+const About = ({ padding='pt-15'}) => {
   return (
     <>
       <Navbar />
-      <div className='py-15'>
+      <div className={`${padding} pb-15`}>
         <HeroSection />
         <AboutDescription />
         <MissionVision />
@@ -86,7 +78,7 @@ const About = () => {
         </div>
         <div className='flex justify-between items-center'>
           <WhatsappButton />
-          <DownloadButton />
+          <DownloadCompro />
         </div>
       </div>
     </>

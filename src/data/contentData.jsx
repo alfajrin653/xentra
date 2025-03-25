@@ -13,8 +13,8 @@ import ProductivityR from '../assets/OdooFitur/ProductivityR.png';
 import ProductivityL from '../assets/OdooFitur/ProductivityL.png';
 import SupplyChainL from '../assets/OdooFitur/SupplyChainL.png';
 import SupplyChainR from '../assets/OdooFitur/SupplyChainR.png';
-import HumanResourceL from '../assets/OdooFitur/ProductivityL.png';
-import HumanResourceR from '../assets/OdooFitur/ProductivityR.png';
+import HumanResourceL from '../assets/OdooFitur/HumanResourceL.png';
+import HumanResourceR from '../assets/OdooFitur/HumanResourceR.png';
 
 const contentData = {
     Finance: {

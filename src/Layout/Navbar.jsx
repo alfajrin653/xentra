@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import logo from '../assets/XENTRA.png';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -23,6 +24,7 @@ const Navbar = () => {
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
         {/* Logo */}
         <a href='/' className='flex items-center space-x-3'>
+        <img src={logo} class="h-8" alt="Flowbite Logo" />
           <span className='self-center text-2xl font-semibold whitespace-nowrap text-black'>Xentra</span>
         </a>
 

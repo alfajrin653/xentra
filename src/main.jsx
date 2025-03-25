@@ -14,6 +14,7 @@ import TrainingSection from './Pages/Training/TrainingSection.jsx';
 import MasterclassTraining from './Pages/Training/MasterclassTraining.jsx';
 import DeveloperTraining from './Pages/Training/DeveloperTraining.jsx';
 import Workshop from './Pages/Training/Workshop.jsx';
+import NotFound from './Pages/Error.jsx';
 
 // ✅ Komponen untuk mengupdate title
 const TitleUpdater = () => {
@@ -50,9 +51,9 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/", // ✅ Harus ada `path` agar tidak error
-    element: <Layout />,
+    element: <Layout />, errorElement: <NotFound /> ,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Home />},
       { path: "/about", element: <About /> },
       { path: "/WhatThatOdoo", element: <WhatOdoo /> },
       { path: "/BusinessImplementationBasic", element: <BIBasic /> },

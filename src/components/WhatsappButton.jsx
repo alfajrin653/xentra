@@ -1,10 +1,11 @@
 import React from 'react';
 // import { FaWhatsapp } from 'react-icons/fa';
 import wa from '../assets/wa.png';
+import DownloadCompro from './DownloadCrompro';
 
 const WhatsappButton = () => {
-  const phoneNumber = '6285776937622'; // Ganti dengan nomor WhatsApp yang diinginkan
-  const message = 'Halo, saya tertarik dengan layanan Anda!';
+  const phoneNumber = '6287764444343'; // Ganti dengan nomor WhatsApp yang diinginkan
+  const message = 'Halo, saya tertarik dengan product odoo!';
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -13,8 +14,9 @@ const WhatsappButton = () => {
       {/* <FaWhatsapp size={28} /> */}
       <img src={wa} alt='aa' />
     </a>
-
+<DownloadCompro />
     </div>
+
   );
 };
 

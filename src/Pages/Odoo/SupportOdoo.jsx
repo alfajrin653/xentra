@@ -85,7 +85,7 @@ const Service = () => {
           </div>
     
           {/* Button */}
-          <Button className="h-[41px] w-[166px] rounded-[10px] border-primary font-semibold lg:mt-10"> Contac US</Button>
+          <Button className="h-[41px] w-[166px] rounded-[10px] border-primary font-semibold lg:mt-10"> Contact US</Button>
         </div>
       );
 }

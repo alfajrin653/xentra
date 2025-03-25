@@ -1,7 +1,7 @@
 // Komponen Reusable untuk Feature Card
 const Features = ({ img, title }) => {
   return (
-    <div className='flex flex-col items-center text-center pb-5'>
+    <div className='flex flex-col  items-center text-center pb-5'>
       <img src={img} alt={title} className='h-[118px] w-[218px] object-contain' />
       <p className='mt-3 text-sm md:text-base'>{title}</p>
     </div>

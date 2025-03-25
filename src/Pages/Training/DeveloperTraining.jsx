@@ -8,10 +8,10 @@ const DeveloperTraining = () => {
     return (
         <>
         <Navbar />
-<Section>
+        <Section>
     <CardImg Label="Developer Training" Button="Join Training" />
-    <div className="flex-1 justify-center items-center p-6 max-w-3xl">
-        <h1 className="text-2xl font-inter font-semibold pb-5 ">
+    <div className="flex-1 justify-center items-center pt-0 lg:pt-6 p-6 max-w-3xl">
+        <h1 className="md:text-2xl text-[18px] font-inter font-semibold pb-5 ">
         Developer Training akan berfokus pada penguasaan keterampilan untuk mengembangkan dan menyesuaikan Odoo, serta mengimplementasikan ide-ide baru ke dalam platform ERP Odoo.
         </h1>
         <Card 

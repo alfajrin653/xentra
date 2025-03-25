@@ -2,9 +2,12 @@ import Navbar from '../../Layout/Navbar';
 import odoo from '../../assets/odoo.png';
 import segitiga from '../../assets/segitiga.png';
 import Card from '../../components/Card';
-import expert from '../../assets/WhyXentra/expert.png';
-import higtQuality from '../../assets/WhyXentra/higtQuality.png';
-import service from '../../assets/WhyXentra/service.png';
+import whyodoo11 from '../../assets/WhyOdoo/whyodoo11.png';
+import whyodoo22 from '../../assets/WhyOdoo/whyodoo22.png';
+import whyodoo33 from '../../assets/WhyOdoo/whyodoo33.png';
+import whyodoo44 from '../../assets/WhyOdoo/whyodoo44.png';
+
+
 
 const WhatOdoo = () => {
   return (
@@ -22,12 +25,12 @@ const WhatOdoo = () => {
         </div>
 
         {/* Grid 3 (Hanya Tampil di XL ke Atas, Di Bawah Grid 1 jika ≤ LG) */}
-        <div className='px-5  lg:pr-10 pt-[70px] col-start-1 row-start-3 xl:col-start-2 xl:row-start-2'>
+        <div className='lg:px-5 scale-90 lg:scale-100 lg:pr-10 pt-[70px] col-start-1 row-start-3 xl:col-start-2 xl:row-start-2'>
           <Product />
         </div>
 
         {/* Grid 4 (Menembus Grid 1) */}
-        <div className='col-start-1 row-start-4 pt-10 relative pl-10 max-w-[570px] max-h-[70px] xl:p-0 xl:row-start-3'>
+        <div className='col-start-1 row-start-4 pt-10 relative lg:pl-10 xl:pl-15 max-w-[570px] max-h-[70px] xl:p-0 xl:row-start-3'>
           <Card title='Why Odo' features={whyOdoo} gridCol='grid-cols-2 md:grid-cols-4' />
         </div>
       </div>
@@ -105,10 +108,10 @@ const Product = () => {
   );
 };
 const whyOdoo = [
-  { img: expert, title: 'All In One Solution' },
-  { img: higtQuality, title: 'Customize Modul' },
-  { img: service, title: 'Affordable Prize' },
-  { img: service, title: '12+million User' },
+  { img: whyodoo11, title: 'All In One Solution' },
+  { img: whyodoo22, title: 'Customize Modul' },
+  { img: whyodoo33, title: 'Affordable Prize' },
+  { img: whyodoo44, title: '12+million User' },
 ];
 
 export default WhatOdoo;
