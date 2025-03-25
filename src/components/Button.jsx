@@ -2,8 +2,8 @@ import React from 'react';
 
 const Button = ({ onClick, className = 'h-[41px] w-[166px] rounded-[10px] border-primary font-semibold', children }) => {
   
-  const phoneNumber = '6285776937622'; // Ganti dengan nomor WhatsApp yang diinginkan
-  const message = 'Halo, saya tertarik dengan layanan Anda!';
+  const phoneNumber = '6287764444343'; // Ganti dengan nomor WhatsApp yang diinginkan
+  const message = 'Halo, saya tertarik dengan layana odoo!';
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   // Fungsi untuk membuka link WhatsApp

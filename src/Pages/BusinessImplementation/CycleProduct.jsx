@@ -37,10 +37,10 @@ const CycleProduct = () => {
                 </div>
                 ))}
             </div>
-            <div className='pt-[20px] pb-[100px]'>
-                <a href="/Contact">
-            <Button className='border-amber-500 w-[316px] h-[56px] rounded-[24px] font-bold text-3xl'> Contact </Button></a>
+            <div className='pt-[20px] pb-[100px]'>  
+            <Button className='border-amber-500 w-[316px] h-[56px] rounded-[24px] font-bold text-3xl'> Contact </Button>
             </div>
+
             </div>
 
     
