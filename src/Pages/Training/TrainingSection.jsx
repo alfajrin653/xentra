@@ -23,7 +23,7 @@ const TrainingSection = () => {
         const trainings = [
             { title: "Functional Training", image: tnw1, path: "/FunctionalTraining" },
             { title: "Developer Training", image: tnw2, path: "/DeveloperTraining" },
-            { title: "Masterclass Training", image: tnw3, path: "/MasterclassTraining" },
+            { title: "Master Class Training", image: tnw3, path: "/MasterclassTraining" },
             { title: "Workshop", image: tnw4, path: "/Workshop" }
         ];
     

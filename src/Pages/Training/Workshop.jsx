@@ -10,7 +10,7 @@ const Workshop = () => {
     <>
     <Navbar />
     <Section>
-    <CardImg Label="Functional Training" Button="Join Training" />
+    <CardImg Label="Workshop" Button="Join Training" />
     <div className="flex-1 justify-center items-center pt-0 lg:pt-6 p-6 max-w-3xl">
         <h1 className="md:text-2xl text-[18px] font-inter font-semibold pb-5 ">
         Workshop ini dirancang untuk membantu Anda memahami dan mengimplementasikan Odoo guna meningkatkan efisiensi bisnis. Dengan bimbingan para ahli, peserta akan mempelajari cara konfigurasi, kustomisasi, dan optimalisasi modul Odoo sesuai kebutuhan perusahaan. Segera bergabung dan tingkatkan produktivitas bisnis Anda dengan solusi ERP yang terintegrasi!  
