@@ -110,7 +110,7 @@ const Product = () => {
 const whyOdoo = [
   { img: whyodoo11, title: 'All In One Solution' },
   { img: whyodoo22, title: 'Customize Modul' },
-  { img: whyodoo33, title: 'Affordable Prize' },
+  { img: whyodoo33, title: 'Affordable Price' },
   { img: whyodoo44, title: '12+million User' },
 ];
 

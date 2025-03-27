@@ -30,11 +30,22 @@ const MissionVision = () => (
   <div className='mt-10 grid grid-cols-1 md:grid-cols-2 relative rounded-lg overflow-hidden'>
     <div className='bg-primary text-white p-6 text-start'>
       <h3 className='text-xl font-semibold'>OUR MISSION</h3>
-      <ul className='list-decimal list-inside mt-3 max-w-[450px]'>
-        <li>Solusi ERP yang mudah diakses dan digunakan oleh semua jenis bisnis.</li>
-        <li>Membantu perusahaan mengoptimalkan proses operasional dengan sistem ERP yang fleksibel dan efisien.</li>
-        <li>Menjadi mitra teknologi yang membantu bisnis mempercepat transformasi digital.</li>
-      </ul>
+      <ul className="list-decimal list-outside mt-3 max-w-[450px] pl-6 ">
+  <li >
+    Solusi ERP yang mudah diakses dan digunakan oleh semua 
+    jenis bisnis.
+  </li>
+  <li >
+    Membantu perusahaan mengoptimalkan proses operasional 
+    dengan sistem ERP yang fleksibel dan efisien.
+  </li>
+  <li >
+    Menjadi mitra teknologi yang membantu bisnis 
+    mempercepat transformasi digital.
+  </li>
+</ul>
+
+
       <div className='border-b-2 border-white pt-10 md:hidden'></div>
     </div>
     <div className='absolute left-1/2 top-0 h-[170px] w-[1.5px]  md:h-full md:w-[2px] md:bg-white'></div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const phoneNumber = '6287764444343'; // Ganti dengan nomor WhatsApp yang diinginkan
-const message = 'Halo, saya tertarik dengan product odoo!';
+const message = 'Halo, saya tertarik dengan product odoo!';
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 // Fungsi untuk membuka link WhatsApp
@@ -14,6 +14,7 @@ const HeroSection = ({
   subtitle, 
   subtitle2, 
   buttonText, 
+  buttonLink = {whatsappLink}, 
   extraImage, 
   isDarkOverlay = true, 
   textAlignment = 'start', 
@@ -37,12 +38,15 @@ const HeroSection = ({
         <h3 className='font-inter font-extrabold text-4xl md:text-5xl lg:text-5xl'>{title2}</h3>
         <p className='text-base md:text-lg lg:text-xl font-inter font-normal mb-6 py-3 max-w-[580px]'>{subtitle2}</p>
 
-        <button 
-  onClick={() => window.open(whatsappLink, '_blank')} 
-  className='text-center bg-white hover:bg-gray-200 w-[166px] h-[41px] text-primary px-6 py-2 rounded-lg font-semibold transition block md:inline-block'
->
-  {buttonText}
-</button>
+        {buttonText && buttonLink && (
+          <a 
+            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+            target='_blank'
+            className='text-center bg-white hover:bg-gray-200 w-[166px] h-[41px] text-primary px-6 py-2 rounded-lg font-semibold transition block md:inline-block'
+          >
+            {buttonText}
+          </a>
+        )}
       </div>
 
       {/* Extra Image (Jika Ada) */}

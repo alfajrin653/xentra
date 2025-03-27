@@ -13,7 +13,7 @@ const Workshop = () => {
     <CardImg Label="Functional Training" Button="Join Training" />
     <div className="flex-1 justify-center items-center pt-0 lg:pt-6 p-6 max-w-3xl">
         <h1 className="md:text-2xl text-[18px] font-inter font-semibold pb-5 ">
-        Functional Training bertujuan agar peserta dapat memahami secara menyeluruh fungsionalitas modul Odoo ERP. Melalui pelatihan ini, Anda akan mendapatkan pemahaman yang lebih baik dalam menggunakan Odoo ERP sehari-hari dan memahami konfigurasi modul yang diperlukan.
+        Workshop ini dirancang untuk membantu Anda memahami dan mengimplementasikan Odoo guna meningkatkan efisiensi bisnis. Dengan bimbingan para ahli, peserta akan mempelajari cara konfigurasi, kustomisasi, dan optimalisasi modul Odoo sesuai kebutuhan perusahaan. Segera bergabung dan tingkatkan produktivitas bisnis Anda dengan solusi ERP yang terintegrasi!  
         </h1>
         <div className="flex-1 justify-center items-center p-6 max-w-2xl bg-white">
             <img src={WorkshopImage} alt=""  className="w-full h-full"/>
