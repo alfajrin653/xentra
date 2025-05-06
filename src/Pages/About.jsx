@@ -79,17 +79,14 @@ const aboutFeatures = [
 const About = ({ padding='pt-15'}) => {
   return (
     <>
-      <Navbar />
-      <div className={`${padding} pb-15`}>
+
+      <div id='about' className={`${padding} pb-15`}>
         <HeroSection />
         <AboutDescription />
         <MissionVision />
         <div className='mt-16'>
+          <h2 className='text-center text-4xl font-bold text-primary pb-5'>Why Xentra</h2>
           <Card features={aboutFeatures} />
-        </div>
-        <div className='flex justify-between items-center'>
-          <WhatsappButton />
-          <DownloadCompro />
         </div>
       </div>
     </>

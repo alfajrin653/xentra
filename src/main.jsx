@@ -15,6 +15,7 @@ import MasterclassTraining from './Pages/Training/MasterclassTraining.jsx';
 import DeveloperTraining from './Pages/Training/DeveloperTraining.jsx';
 import Workshop from './Pages/Training/Workshop.jsx';
 import NotFound from './Pages/Error.jsx';
+import OdooVsSap from './Pages/OdooVsSap.jsx';
 
 // ✅ Komponen untuk mengupdate title
 const TitleUpdater = () => {
@@ -23,7 +24,7 @@ const TitleUpdater = () => {
   useEffect(() => {
     const titles = {
       "/": "Home - Xentra",
-      "/About": "About Us - Xentra",
+      "/odoo-vs-sap": "Odoo vs SAP - Xentra",
       "/WhatThatOdoo": "What is Odoo? - Xentra",
       "/BusinessImplementationBasic": "Business Implementation Basic - Xentra",
       "/BusinessImplementationAdvance": "Business Implementation Advance - Xentra",
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
     element: <Layout />, errorElement: <NotFound /> ,
     children: [
       { path: "/", element: <Home />},
-      { path: "/about", element: <About /> },
+      { path: "/odoo-vs-sap", element: <OdooVsSap /> },
       { path: "/WhatThatOdoo", element: <WhatOdoo /> },
       { path: "/BusinessImplementationBasic", element: <BIBasic /> },
       { path: "/BusinessImplementationAdvance", element: <BIAdvance /> },

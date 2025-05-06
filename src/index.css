@@ -17,6 +17,14 @@ body {
   }
 }
 
+@theme {
+  --color-primary: #012e31;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --breakpoint-xs: 30rem;
+}
+
+
 @layer utilities {
   .bg-primary {
     background-color: var(--color-primary);
